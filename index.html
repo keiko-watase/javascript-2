@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+
+  <body>
+    <!-- ここに記述していきましょう！ -->
+    <table>
+    <tr>
+      <td>
+        <input type="text" id="result" value="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" value="7" onclick="clickNumber(7)">
+        <input type="button" value="8" onclick="clickNumber(8)">
+        <input type="button" value="9" onclick="clickNumber(9)">
+        <input type="button" value="+" onclick="clickSign('+')">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" value="4" onclick="clickNumber(4)">
+        <input type="button" value="5" onclick="clickNumber(5)">
+        <input type="button" value="6" onclick="clickNumber(6)">
+        <input type="button" value="-" onclick="clickSign('-')">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="button" value="1" onclick="clickNumber(1)">
+        <input type="button" value="2" onclick="clickNumber(2)">
+        <input type="button" value="3" onclick="clickNumber(3)">
+        <input type="button" value="*" onclick="clickSign('*')">
+      </td>
+    </tr>
+    <tr>
+      <td> 
+        <input type="button" value="0" onclick="clickNumber(0)">
+        <input type="button" value="00" onclick="clickNumber('00')">
+        <input type="button" value="." onclick="clickSign('.')">
+        <input type="button" value="/" onclick="clickSign('/')">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input class="lastline" type="button" value="AC" onclick="reset()">
+        <input class="lastline" type="button" value="=" onclick="calculate()">
+      </td>
+    </tr>
+    </table>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
